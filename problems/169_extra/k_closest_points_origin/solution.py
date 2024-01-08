@@ -5,5 +5,6 @@ class Solution:
         # nlogn
         calc = []
         for p in points:
-            calc.append((p, math.sqrt(p[0] ** 2 + p[1] ** 2)))
+            # math.sqrt(p[0] ** 2 + p[1] ** 2) -> p[0] ** 2 + p[1] ** 2
+            calc.append((p, p[0] ** 2 + p[1] ** 2))
         return [x[0] for x in sorted(calc, key=lambda x: x[1])[:k]]
