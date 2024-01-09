@@ -21,6 +21,3 @@ class Solution:
             else:
                 return r
         return r
-
-        return traverse(r)
-        
